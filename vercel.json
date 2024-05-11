@@ -2,10 +2,10 @@
     "version": 2,
     "builds": [
       {
-        "src": "server.js",
+        "src": "./src/app/page.tsx",
         "use": "@vercel/node",
         "config": {
-          "includeFiles": ["todo.json"]
+          "includeFiles": ["./src/app/Components/data/todos.json"]
         }
       }
     ],
