@@ -2,7 +2,7 @@
     "version": 2,
     "builds": [
       {
-        "src":"layout.tsx",
+        "src":"page.tsx",
         "use": "@vercel/node",
         "config": {
           "includeFiles": ["src/app/Components/data/todos.json"]
