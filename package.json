@@ -10,6 +10,7 @@
   },
   "dependencies": {
     "axios": "^1.6.8",
+    "cors": "^2.8.5",
     "docker": "^1.0.0",
     "next": "^14.3.0-canary.38",
     "react": "^18",
@@ -26,9 +27,9 @@
     "daisyui": "^4.10.5",
     "eslint": "^8",
     "eslint-config-next": "14.2.3",
+    "json-server": "^0.17.1",
     "postcss": "^8.4.38",
     "tailwindcss": "^3.4.3",
-    "typescript": "^5",
-    "json-server": "^0.17.1"
+    "typescript": "^5"
   }
 }

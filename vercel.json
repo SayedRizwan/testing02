@@ -1,19 +1,14 @@
 {
-    "version": 2,
-    "builds": [
-      {
-        "src":"page.tsx",
-        "use": "@vercel/node",
-        "config": {
-          "includeFiles": ["src/app/Components/data/todos.json"]
-        }
-      }
-    ],
-    "routes": [
-      {
-        "src": "/(.*)",
-        "dest": "/"
-      }
-    ]
-    
+  "functions": {
+    "src/app/Components/apis.ts": {
+      "memory": 1024,
+      "includeFiles": "src/app/Components/data/todos.json"
+    }
+  },
+  "rewrites": [
+    {
+      "source": "/(.*)",
+      "destination": "src/app/Components/apis.ts"
+    }
+  ]
 }
