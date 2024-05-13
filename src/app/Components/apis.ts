@@ -1,8 +1,8 @@
 import { ITask } from "./types/task";
 
 //const baseUrl = "https://jsonplaceholder.typicode.com/users";
-const baseUrl="http://localhost:3001/tasks"
-//const baseUrl= process.env.BASE_URL;
+//const baseUrl="http://localhost:3001/tasks"
+const baseUrl= process.env.taskurl;
 export const getAllTodos = async (): Promise<ITask[]> => {
   const res = await fetch(`${baseUrl}`, { cache: "no-store" });
   const todos = await res.json();
